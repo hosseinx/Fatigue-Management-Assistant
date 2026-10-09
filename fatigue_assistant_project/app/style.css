@@ -1,0 +1,72 @@
+/* Liquid-glass theme for the Fatigue Assistant (loaded by app.py) */
+@keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+
+.stApp {
+  background: linear-gradient(-45deg, #a8c8ff, #ffd6e8, #c5b8f5, #d4e7ff, #b8e6ff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+}
+@media (prefers-reduced-motion: reduce) { .stApp { animation: none; } }
+
+section[data-testid="stSidebar"] {
+  background: rgba(255,255,255,.35) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-right: 1px solid rgba(255,255,255,.5) !important;
+}
+section[data-testid="stSidebar"] > div:first-child { background: transparent !important; }
+section[data-testid="stSidebar"] h4 {
+  color: rgba(30,41,59,.95) !important; font-weight: 700; font-size: .95rem;
+  text-transform: uppercase; letter-spacing: 1px; margin-top: 10px;
+  border-bottom: 2px solid rgba(255,255,255,.4);
+}
+
+.glass-header {
+  font-size: 2.8rem; font-weight: 800; text-align: center; margin-bottom: 5px; letter-spacing: -.5px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.glass-subheader { font-size: 1.2rem; color: rgba(30,41,59,.7); text-align: center; margin-bottom: 30px; font-weight: 500; }
+
+.stSlider {
+  background: rgba(255,255,255,.25); backdrop-filter: blur(12px); border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.4); padding: 14px 18px 20px !important; margin-bottom: 12px;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.stSlider:hover { background: rgba(255,255,255,.4); transform: translateY(-2px); }
+.stSlider label { color: rgba(30,41,59,.9) !important; font-weight: 600; font-size: .9rem; }
+
+.stSelectbox > div > div {
+  background: rgba(255,255,255,.35) !important; backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.5) !important; border-radius: 12px !important;
+}
+
+[data-testid="stMetric"] {
+  background: rgba(255,255,255,.3); backdrop-filter: blur(16px); border-radius: 20px;
+  padding: 20px; border: 1px solid rgba(255,255,255,.5); box-shadow: 0 8px 32px rgba(0,0,0,.06);
+}
+[data-testid="stMetricLabel"] { color: rgba(71,85,105,.9) !important; font-weight: 600; }
+[data-testid="stMetricValue"] { color: rgba(15,23,42,.95) !important; font-weight: 800; }
+
+.stButton > button {
+  width: 100%; padding: 18px 32px; font-size: 1.4rem; font-weight: 700; color: #fff;
+  background: linear-gradient(135deg, rgba(102,126,234,.9), rgba(118,75,162,.9));
+  border: 1.5px solid rgba(255,255,255,.4) !important; border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(102,126,234,.35); transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+.stButton > button:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 45px rgba(102,126,234,.5); }
+
+.stAlert { backdrop-filter: blur(15px); border-radius: 16px !important; }
+[data-testid="stExpander"] { background: rgba(255,255,255,.25) !important; backdrop-filter: blur(15px); border-radius: 16px !important; }
+
+h1,h2,h3,h4,h5,h6 { color: rgba(15,23,42,.95) !important; }
+p, span, label { color: rgba(51,65,85,.95); }
+
+.factor { padding: 6px 0; font-size: 1rem; }
+.factor .up { color: #b45309; font-weight: 700; }
+.factor .down { color: #15803d; font-weight: 700; }
+
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header[data-testid="stHeader"] { background: transparent; }

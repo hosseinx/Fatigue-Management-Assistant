@@ -1,0 +1,46 @@
+{
+  "model_name": "Logistic regression",
+  "trained_at": "2026-10-09T13:30:39+00:00",
+  "sklearn_version": "1.7.2",
+  "n_rows": 24999,
+  "classes": [
+    "Continue",
+    "Slow Down",
+    "Take Break"
+  ],
+  "feature_ranges": {
+    "Hours_Awake": [
+      1.0,
+      17.0
+    ],
+    "Decisions_Made": [
+      0.0,
+      117.0
+    ],
+    "Sleep_Hours_Last_Night": [
+      2.0,
+      9.0
+    ],
+    "Caffeine_Intake_Cups": [
+      0.0,
+      6.0
+    ],
+    "Stress_Level_1_10": [
+      1.0,
+      8.7
+    ]
+  },
+  "holdout": {
+    "macro_f1": 0.9326927334722516,
+    "accuracy": 0.9484,
+    "recall_take_break": 0.9619274241522903
+  },
+  "cv": {
+    "f1_macro_mean": 0.9360647902808699,
+    "f1_macro_std": 0.003736419398601476,
+    "accuracy_mean": 0.9503178955791158,
+    "accuracy_std": 0.0028520006192693185,
+    "recall_take_break_mean": 0.9604950284694486,
+    "recall_take_break_std": 0.0008056146609752224
+  }
+}
