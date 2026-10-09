@@ -16,9 +16,3 @@ probabilities, and the top factors behind the prediction.
   saved metrics and confusion matrix, unit tests.
 - **Guardrails in the UI:** slider ranges come from the training data, and out-of-range
   inputs trigger a warning.
-
-## Limitations
-The dataset is synthetic and its labels come from a rule-based fatigue score. The results
-show that the pipeline learns that rule. They do not show that it predicts real human
-fatigue. This is a research prototype, not medical or occupational-safety advice.
-Validation on real self-report or behavioural data is the next step.
